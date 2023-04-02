@@ -17,10 +17,17 @@
     </licenses>
     <developers>
         <developer>
-            <name>silidos</name>
+            <id>silidos</id>
+            <name>Kevin Gulisano</name>
             <email>psnsilidos@gmail.com</email>
         </developer>
     </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:silidos/graphqxl-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://github.com/silidos/graphqxl-maven-plugin.git</developerConnection>
+        <url>https://github.com/silidos/graphqxl-maven-plugin</url>
+    </scm>
 
     <properties>
         <!-- Java version target -->
@@ -37,12 +44,7 @@
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.5.0</maven-javadoc-plugin.version>
         <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
-        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
-        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
-
-        <project.scm.url>https://github.com/silidos/graphqxl-maven-plugin</project.scm.url>
-        <project.scm.url.git>scm:git:${project.scm.url}.git</project.scm.url.git>
-
+        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     </properties>
 
     <dependencies>
@@ -117,18 +119,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
-            </plugin>
-
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>${nexus-staging-maven-plugin.version}</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
             </plugin>
 
         </plugins>
