@@ -26,7 +26,7 @@ You can add the plugin to your `pom.xml` file like so:
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+</plugin>
 ```            
 
 ### Configuration
