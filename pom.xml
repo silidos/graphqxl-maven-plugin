@@ -9,6 +9,8 @@
 
     <name>${project.artifactId}</name>
     <description>Builds a GraphQL schema from GraphQXL files.</description>
+    <url>https://github.com/silidos/graphqxl-maven-plugin</url>
+
     <licenses>
         <license>
             <name>MIT License</name>
