@@ -39,7 +39,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Dependencies -->
-        <maven-plugin-annotations.version>3.8.1</maven-plugin-annotations.version>
+        <maven-plugin-annotations.version>3.11.0</maven-plugin-annotations.version>
         <maven-plugin-api.version>3.9.1</maven-plugin-api.version>
 
         <!-- Release plugins -->
